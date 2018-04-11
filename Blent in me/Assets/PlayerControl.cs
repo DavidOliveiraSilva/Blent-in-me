@@ -19,12 +19,14 @@ public class PlayerControl : MonoBehaviour {
 		rb2d.AddForce( new Vector2(hor*speed, ver*speed));
 	}
 
-	void OnCollisionEnter2D(Collision2D coll){
+	void OnTriggerEnter2D(Collider2D coll){
 		if (coll.gameObject.tag == "Cell" && coll.gameObject.GetComponent<Cell>().state == "free") {
 			for (int i = 0; i < joints.Length; i++) {
 				if (joints [i] == null) {
 					joints[i] = gameObject.AddComponent<SpringJoint2D> ();
 					joints [i].connectedBody = coll.gameObject.GetComponent<Rigidbody2D> ();
+					joints [i].distance = 0.3f;
+					joints [i].dampingRatio = 1f;
 					coll.gameObject.GetComponent<Cell>().state = "jointed";
 					return;
 				}
