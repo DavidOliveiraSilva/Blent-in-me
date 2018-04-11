@@ -56,7 +56,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 0.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
@@ -78,7 +78,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.2
 --- !u!114 &114800256245479850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -91,6 +91,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: free
+  multiplier: 1
+  decay: 60
 --- !u!198 &198277802931131404
 ParticleSystem:
   m_ObjectHideFlags: 1

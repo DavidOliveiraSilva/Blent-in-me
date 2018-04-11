@@ -18,7 +18,7 @@ public class Cell : MonoBehaviour {
 		if (state == "jointed") {
 			time += Time.deltaTime*multiplier;
 			if (time >= decay) {
-				state == "decay";
+				state = "decay";
 			}
 		}
 		if (state == "decay") {
