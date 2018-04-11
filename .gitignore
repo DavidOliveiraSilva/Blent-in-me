@@ -1,11 +1,45 @@
-
-Blent in me/Temp/UnityTempFile-05cd20babd42fce4a90903d2c6e1db6e
-*.backup
-Blent in me/Temp/UnityLockfile
-Blent in me/Temp/UnityTempFile-0704de91eca24a24b8a08f3c816353f6
-Blent in me/Temp/UnityTempFile-2e953750e18a2f549935c7f7284c2a83
-Blent in me/Temp/UnityTempFile-3fbd8bf1b75ad1d47be60b4e154092a3
-Blent in me/Temp/UnityTempFile-65fced42833b9894583baf485837a854
-Blent in me/Temp/UnityTempFile-bcae76d71b2ae2a41817dcc6067520ac
-Blent in me/Temp/UnityTempFile-fede45c4de823594cab0936e3e17b1d4
-Blent in me/Temp/UnityTempFile-ffa7267b71c46f3429876ba341737c04
+# =============== #
+# Unity generated #
+# =============== #
+[Tt]emp/
+[Oo]bj/
+[Bb]uild
+/[Bb]uilds/
+/[Ll]ibrary/
+sysinfo.txt
+*.stackdump
+/Assets/AssetStoreTools*
+*.apk
+*.unitypackage
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+.vs/
+/*.userprefs
+/*.csproj
+/*.pidb
+*.pidb.meta
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+.consulo/
+/*.tmp
+/*.svd
+ 
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+[Dd]esktop.ini
+Corridor/Library/ShaderCache/
+Corridor/Library/metadata/
