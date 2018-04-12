@@ -17,13 +17,23 @@ public class PlayerControl : MonoBehaviour {
 		float hor = Input.GetAxis ("Horizontal");
 		float ver = Input.GetAxis ("Vertical");
 		rb2d.AddForce( new Vector2(hor*speed, ver*speed));
+		for (int i = 0; i < joints.Length; i++) {
+			if (joints [i] != null) {
+				if (joints [i].connectedBody.gameObject.GetComponent<Cell> ().state == "decay") {
+					joints [i].connectedBody = null;
+					Destroy (joints [i]);
+					joints [i] = null;
+					break;
+				}
+			}
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D coll){
 		if (coll.gameObject.tag == "Cell" && coll.gameObject.GetComponent<Cell>().state == "free") {
 			for (int i = 0; i < joints.Length; i++) {
 				if (joints [i] == null) {
-					joints[i] = gameObject.AddComponent<SpringJoint2D> ();
+					joints [i] = gameObject.AddComponent<SpringJoint2D> ();
 					joints [i].connectedBody = coll.gameObject.GetComponent<Rigidbody2D> ();
 					joints [i].distance = 0.3f;
 					joints [i].dampingRatio = 1f;
@@ -33,5 +43,9 @@ public class PlayerControl : MonoBehaviour {
 			}
 
 		}
+	}
+	void FreeNullJoints(){
+		
+
 	}
 }

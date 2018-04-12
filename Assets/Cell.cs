@@ -6,10 +6,12 @@ public class Cell : MonoBehaviour {
 	public string state = "free";
 	private float time = 0;
 	public float multiplier = 1;
-	public float decay = 60;
+	public float decay = 5;
+	private ParticleSystem ps;
+	private bool changedColor = false;
 	// Use this for initialization
 	void Start () {
-		
+		ps = GetComponent<ParticleSystem> ();
 	}
 	
 	// Update is called once per frame
@@ -22,7 +24,14 @@ public class Cell : MonoBehaviour {
 			}
 		}
 		if (state == "decay") {
-
+			if (!changedColor) {
+				int qtd = ps.main.startColor.gradient.colorKeys.Length;
+				var psmain = ps.main;
+				for (int i = 0; i < qtd; i++) {
+					psmain.startColor.gradient.colorKeys [i].color = new Color (1, 0, (i / (qtd * 1.0f)));
+				}
+				changedColor = true;
+			}
 		}
 	}
 }
