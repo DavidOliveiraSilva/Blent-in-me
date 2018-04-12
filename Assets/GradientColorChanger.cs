@@ -19,7 +19,11 @@ public class GradientColorChanger : MonoBehaviour {
 		dChange = endChange - startChange;
 		awakeTime = Time.time;
 	}
-	
+	void OnEnable(){
+		awakeTime = Time.time;
+		time = 0;
+		done = false;
+	}
 	// Update is called once per frame
 	void Update () {
 		if (Time.time - awakeTime > startChange && Time.time - awakeTime < endChange) {
