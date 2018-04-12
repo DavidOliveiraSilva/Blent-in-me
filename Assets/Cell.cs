@@ -9,6 +9,7 @@ public class Cell : MonoBehaviour {
 	public float decay = 5;
 	private ParticleSystem ps;
 	private bool changedColor = false;
+	public Gradient decayColor;
 	// Use this for initialization
 	void Start () {
 		ps = GetComponent<ParticleSystem> ();
@@ -27,9 +28,7 @@ public class Cell : MonoBehaviour {
 			if (!changedColor) {
 				int qtd = ps.main.startColor.gradient.colorKeys.Length;
 				var psmain = ps.main;
-				for (int i = 0; i < qtd; i++) {
-					psmain.startColor.gradient.colorKeys [i].color = new Color (1, 0, (i / (qtd * 1.0f)));
-				}
+				psmain.startColor = new ParticleSystem.MinMaxGradient (decayColor);
 				changedColor = true;
 			}
 		}

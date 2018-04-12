@@ -7,9 +7,14 @@ public class PlayerControl : MonoBehaviour {
 	public float speed;
 	public SpringJoint2D[] joints;
 	private int jointCount = 0;
+	public float expelingForce;
+	private GameObject camera;
+	public GameObject ripple1;
+	public GameObject ripple2;
 	// Use this for initialization
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D>();
+		camera = GameObject.Find ("Main Camera");
 	}
 	
 	// Update is called once per frame
@@ -20,9 +25,13 @@ public class PlayerControl : MonoBehaviour {
 		for (int i = 0; i < joints.Length; i++) {
 			if (joints [i] != null) {
 				if (joints [i].connectedBody.gameObject.GetComponent<Cell> ().state == "decay") {
+					GameObject r = Instantiate (ripple2);
+					r.transform.position = joints[i].connectedBody.transform.position;
 					joints [i].connectedBody = null;
 					Destroy (joints [i]);
 					joints [i] = null;
+					camera.GetComponent<ShakeCamera> ().Shake ();
+
 					break;
 				}
 			}
@@ -38,6 +47,8 @@ public class PlayerControl : MonoBehaviour {
 					joints [i].distance = 0.3f;
 					joints [i].dampingRatio = 1f;
 					coll.gameObject.GetComponent<Cell>().state = "jointed";
+					GameObject r = Instantiate (ripple1);
+					r.transform.position = joints[i].connectedBody.transform.position;
 					return;
 				}
 			}
