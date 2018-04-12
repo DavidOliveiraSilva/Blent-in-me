@@ -155,7 +155,7 @@ Prefab:
     - target: {fileID: 114800256245479850, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf,
         type: 2}
       propertyPath: decay
-      value: 60
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf, type: 2}
@@ -206,7 +206,7 @@ Prefab:
     - target: {fileID: 114800256245479850, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf,
         type: 2}
       propertyPath: decay
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf, type: 2}
@@ -257,7 +257,7 @@ Prefab:
     - target: {fileID: 114800256245479850, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf,
         type: 2}
       propertyPath: decay
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf, type: 2}
@@ -308,7 +308,7 @@ Prefab:
     - target: {fileID: 114800256245479850, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf,
         type: 2}
       propertyPath: decay
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf, type: 2}
@@ -359,7 +359,7 @@ Prefab:
     - target: {fileID: 114800256245479850, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf,
         type: 2}
       propertyPath: decay
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf, type: 2}
@@ -410,7 +410,7 @@ Prefab:
     - target: {fileID: 114800256245479850, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf,
         type: 2}
       propertyPath: decay
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf, type: 2}
@@ -503,7 +503,7 @@ Prefab:
     - target: {fileID: 114800256245479850, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf,
         type: 2}
       propertyPath: decay
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf, type: 2}
@@ -554,7 +554,7 @@ Prefab:
     - target: {fileID: 114800256245479850, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf,
         type: 2}
       propertyPath: decay
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf, type: 2}
@@ -605,7 +605,7 @@ Prefab:
     - target: {fileID: 114800256245479850, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf,
         type: 2}
       propertyPath: decay
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf, type: 2}
@@ -656,7 +656,7 @@ Prefab:
     - target: {fileID: 114800256245479850, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf,
         type: 2}
       propertyPath: decay
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf, type: 2}
@@ -707,7 +707,7 @@ Prefab:
     - target: {fileID: 114800256245479850, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf,
         type: 2}
       propertyPath: decay
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf, type: 2}
@@ -724,6 +724,7 @@ GameObject:
   - component: {fileID: 1626730790}
   - component: {fileID: 1626730789}
   - component: {fileID: 1626730793}
+  - component: {fileID: 1626730794}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -805,6 +806,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97c992142740b8e4b85ded08cfd7d142, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1626730794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1626730788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c96a5e1db771a54eb1a85b5cde6f0de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.7
+  maxRadius: 0.4
 --- !u!1001 &1821836347
 Prefab:
   m_ObjectHideFlags: 0
@@ -851,7 +865,7 @@ Prefab:
     - target: {fileID: 114800256245479850, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf,
         type: 2}
       propertyPath: decay
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ad091dc4b8f5334fa8d65350a2d9ccf, type: 2}

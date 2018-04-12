@@ -118,6 +118,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  expelingForce: 50
+  ripple1: {fileID: 1164456024085474, guid: 20f9d66d77c470d4c8e560bcff3e396d, type: 2}
+  ripple2: {fileID: 1563855037295744, guid: 9eab75bbf6a1ed147a029731199bb6d5, type: 2}
 --- !u!198 &198204357492074318
 ParticleSystem:
   m_ObjectHideFlags: 1
