@@ -154,7 +154,7 @@ MonoBehaviour:
   ripple2: {fileID: 1563855037295744, guid: 9eab75bbf6a1ed147a029731199bb6d5, type: 2}
   maxHealth: 100
   health: 100
-  hpDecayRate: 10
+  hpDecayRate: 5
   active: 1
 --- !u!198 &198204357492074318
 ParticleSystem:

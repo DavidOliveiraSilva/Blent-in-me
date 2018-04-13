@@ -51,4 +51,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d79c518ce9998ef489b351e6e3edb370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: Blent in Me
+    clip: {fileID: 8300000, guid: 6950a0cff70454045919aacff2e6410a, type: 3}
+    volume: 0.734
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+    loop: 1
+    isTrack: 1
+  - name: Logo
+    clip: {fileID: 8300000, guid: 09c4d76324f617e4c987b30b068ee850, type: 3}
+    volume: 0.752
+    pitch: 0.871
+    randomVolume: 0
+    randomPitch: 0
+    loop: 0
+    isTrack: 0
+  - name: Play
+    clip: {fileID: 8300000, guid: 72f8ff13921abd34bb8731b70f21ba07, type: 3}
+    volume: 0.826
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0
+    loop: 0
+    isTrack: 0
+  - name: Cell
+    clip: {fileID: 8300000, guid: 5bf24d9c404d7624a8360238dcb43deb, type: 3}
+    volume: 0.954
+    pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+    isTrack: 0
+  - name: Mother
+    clip: {fileID: 8300000, guid: fc35b28f673e4d34ebbfaac237bf248a, type: 3}
+    volume: 1
+    pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+    isTrack: 0
+  - name: Decay
+    clip: {fileID: 8300000, guid: 9c663134a8f34084abc92a0cd94d101a, type: 3}
+    volume: 1
+    pitch: 1
+    randomVolume: 0.1
+    randomPitch: 0.1
+    loop: 0
+    isTrack: 0
