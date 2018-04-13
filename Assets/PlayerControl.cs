@@ -17,8 +17,10 @@ public class PlayerControl : MonoBehaviour {
 	public float hpDecayRate = 10;
 	public bool active = true;
 	private float gameOver = 0;
+	private AudioManager audioManager;
 	// Use this for initialization
 	void Start () {
+		audioManager = AudioManager.instance;
 		rb2d = GetComponent<Rigidbody2D>();
 		camera = GameObject.Find ("Main Camera");
 	}
@@ -60,6 +62,7 @@ public class PlayerControl : MonoBehaviour {
 					joints [i] = null;
 					camera.GetComponent<ShakeCamera> ().Shake ();
 					jointCount--;
+					audioManager.PlaySound ("Decay");
 					break;
 				}
 			}
@@ -79,6 +82,7 @@ public class PlayerControl : MonoBehaviour {
 					coll.gameObject.GetComponent<Cell>().state = "jointed";
 					GameObject r = Instantiate (ripple1);
 					r.transform.position = joints[i].connectedBody.transform.position;
+					audioManager.PlaySound ("Cell");
 					return;
 				}
 			}

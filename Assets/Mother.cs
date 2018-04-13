@@ -8,9 +8,10 @@ public class Mother : MonoBehaviour {
 	private float end;
 	private bool ending = false;
 	public string nextSceneName;
+	private AudioManager audioManager;
 	// Use this for initialization
 	void Start () {
-		
+		audioManager = AudioManager.instance;
 	}
 	
 	// Update is called once per frame
@@ -27,11 +28,13 @@ public class Mother : MonoBehaviour {
 			return;
 		}
 		if (other.tag == "Player") {
+			audioManager.PlaySound ("Mother");
 			other.GetComponent<PlayerControl> ().active = false;
 			joint = gameObject.AddComponent<SpringJoint2D> ();
 			joint.connectedBody = other.gameObject.GetComponent<Rigidbody2D> ();
 			joint.distance = 0.3f;
 			end = GameObject.Find ("Main Camera").GetComponent<CameraController> ().Close ();
+			ending = true;
 		}
 	}
 }
