@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/Fase1.unity
     guid: 587390dab28294145b3a77b1207e151f
   - enabled: 1
+    path: Assets/Fase2.unity
+    guid: 95d16b1c8420a3b42a0b561511170936
+  - enabled: 1
+    path: Assets/Fase3.unity
+    guid: de6f0f2cc4942df4093b7b237054c1b6
+  - enabled: 1
+    path: Assets/Fase4.unity
+    guid: 795ad4cfe9739504aa4db2eb25a85de9
+  - enabled: 1
     path: Assets/Fase8.unity
     guid: f80a51db2c2d5844baf78b3d7079ce31
   - enabled: 1
