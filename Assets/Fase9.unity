@@ -378,7 +378,7 @@ Transform:
   m_Children:
   - {fileID: 870701731}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &631035774
 Prefab:
@@ -90955,7 +90955,7 @@ Prefab:
     - target: {fileID: 114493322632250666, guid: 30fb8792192c28042995e64837b9f7d9,
         type: 2}
       propertyPath: nextSceneName
-      value: Fase3
+      value: Fase10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 30fb8792192c28042995e64837b9f7d9, type: 2}
