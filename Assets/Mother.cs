@@ -9,9 +9,11 @@ public class Mother : MonoBehaviour {
 	private bool ending = false;
 	public string nextSceneName;
 	private AudioManager audioManager;
+	private Data data;
 	// Use this for initialization
 	void Start () {
 		audioManager = AudioManager.instance;
+		data = GameObject.Find ("Data").GetComponent<Data> ();
 	}
 	
 	// Update is called once per frame
@@ -19,6 +21,7 @@ public class Mother : MonoBehaviour {
 		if (ending) {
 			end -= Time.deltaTime;
 			if (end <= 0) {
+				data.lastScene = nextSceneName;
 				SceneManager.LoadScene (nextSceneName);
 			}
 		}

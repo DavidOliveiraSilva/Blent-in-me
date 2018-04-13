@@ -51,22 +51,23 @@ public class PlayerControl : MonoBehaviour {
 					health = maxHealth;
 				}
 			}
-		}
-		for (int i = 0; i < joints.Length; i++) {
-			if (joints [i] != null) {
-				if (joints [i].connectedBody.gameObject.GetComponent<Cell> ().state == "decay") {
-					GameObject r = Instantiate (ripple2);
-					r.transform.position = joints[i].connectedBody.transform.position;
-					joints [i].connectedBody = null;
-					Destroy (joints [i]);
-					joints [i] = null;
-					camera.GetComponent<ShakeCamera> ().Shake ();
-					jointCount--;
-					audioManager.PlaySound ("Decay");
-					break;
+			for (int i = 0; i < joints.Length; i++) {
+				if (joints [i] != null) {
+					if (joints [i].connectedBody.gameObject.GetComponent<Cell> ().state == "decay") {
+						GameObject r = Instantiate (ripple2);
+						r.transform.position = joints[i].connectedBody.transform.position;
+						joints [i].connectedBody = null;
+						Destroy (joints [i]);
+						joints [i] = null;
+						camera.GetComponent<ShakeCamera> ().Shake ();
+						jointCount--;
+						audioManager.PlaySound ("Decay");
+						break;
+					}
 				}
 			}
 		}
+
 
 	}
 
