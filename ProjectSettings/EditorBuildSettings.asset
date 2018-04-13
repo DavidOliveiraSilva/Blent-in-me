@@ -12,13 +12,13 @@ EditorBuildSettings:
     path: Assets/MenuTitle.unity
     guid: 2d9f186cc74c8b840825a43320469c85
   - enabled: 1
-    path: Assets/Fase1.unity
+    path: Assets/Fase8.unity
     guid: f80a51db2c2d5844baf78b3d7079ce31
   - enabled: 1
-    path: Assets/Fase2.unity
+    path: Assets/Fase9.unity
     guid: 73e6833f38217bd4aba290d1fc248963
   - enabled: 1
-    path: Assets/Fase3.unity
+    path: Assets/Fase10.unity
     guid: 3b4f5c8acb7cfff468d68f9a6c8961b0
   - enabled: 1
     path: Assets/GameOver.unity
@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Credits.unity
     guid: 66f4354660360274784042064c15883c
+  - enabled: 1
+    path: Assets/Fase2.unity
+    guid: 95d16b1c8420a3b42a0b561511170936
