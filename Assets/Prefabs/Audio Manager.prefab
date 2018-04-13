@@ -54,7 +54,7 @@ MonoBehaviour:
   sounds:
   - name: Blent in Me
     clip: {fileID: 8300000, guid: 6950a0cff70454045919aacff2e6410a, type: 3}
-    volume: 0.734
+    volume: 0.462
     pitch: 1
     randomVolume: 0
     randomPitch: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
     isTrack: 1
   - name: Logo
     clip: {fileID: 8300000, guid: 09c4d76324f617e4c987b30b068ee850, type: 3}
-    volume: 0.752
+    volume: 0.679
     pitch: 0.871
     randomVolume: 0
     randomPitch: 0
@@ -70,7 +70,7 @@ MonoBehaviour:
     isTrack: 0
   - name: Play
     clip: {fileID: 8300000, guid: 72f8ff13921abd34bb8731b70f21ba07, type: 3}
-    volume: 0.826
+    volume: 0.789
     pitch: 1
     randomVolume: 0
     randomPitch: 0
@@ -78,7 +78,7 @@ MonoBehaviour:
     isTrack: 0
   - name: Cell
     clip: {fileID: 8300000, guid: 5bf24d9c404d7624a8360238dcb43deb, type: 3}
-    volume: 0.954
+    volume: 0.908
     pitch: 1
     randomVolume: 0.1
     randomPitch: 0.1
@@ -96,7 +96,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 9c663134a8f34084abc92a0cd94d101a, type: 3}
     volume: 1
     pitch: 1
-    randomVolume: 0.1
+    randomVolume: 0
     randomPitch: 0.1
     loop: 0
     isTrack: 0
