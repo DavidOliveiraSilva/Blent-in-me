@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4195631663257084}
   - component: {fileID: 2569400266783679026}
   m_Layer: 31
-  m_Name: Fase3
+  m_Name: Fase10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
