@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class LogoScene : MonoBehaviour {
 	private GradientColorChanger gcc;
@@ -16,8 +16,8 @@ public class LogoScene : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (gcc.IsDone ()) {
-			EditorSceneManager.LoadScene ("MenuTitle");
-			audioManager.PlaySound ("Blent in Me");
+			SceneManager.LoadScene ("MenuTitle");
+			audioManager.PlaySound ("Searching Life");
 		}
 	}
 }

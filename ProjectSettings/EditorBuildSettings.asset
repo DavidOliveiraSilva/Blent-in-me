@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/MenuTitle.unity
     guid: 2d9f186cc74c8b840825a43320469c85
   - enabled: 1
+    path: Assets/Tutorial.unity
+    guid: 50d2d7466aa9ffd43a1718e61abfbfdf
+  - enabled: 1
     path: Assets/Fase1.unity
     guid: 587390dab28294145b3a77b1207e151f
   - enabled: 1

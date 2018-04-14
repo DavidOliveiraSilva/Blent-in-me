@@ -123,7 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: free
   multiplier: 1
-  decay: 60
+  decay: 50
   decayColor:
     serializedVersion: 2
     key0: {r: 0.6682316, g: 0.45869377, b: 0.74264705, a: 0.08235294}

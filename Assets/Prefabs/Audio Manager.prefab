@@ -100,3 +100,11 @@ MonoBehaviour:
     randomPitch: 0.1
     loop: 0
     isTrack: 0
+  - name: Searching Life
+    clip: {fileID: 8300000, guid: f72d5a7e32fabd644ac12964c693f772, type: 3}
+    volume: 0.569
+    pitch: 1
+    randomVolume: 0
+    randomPitch: 0.1
+    loop: 1
+    isTrack: 1
