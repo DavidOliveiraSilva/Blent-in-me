@@ -35,9 +35,7 @@ public class PlayerControl : MonoBehaviour {
 			return;
 		}
 		if (active) {
-			float hor = Input.GetAxis ("Horizontal");
-			float ver = Input.GetAxis ("Vertical");
-			rb2d.AddForce (new Vector2 (hor * speed, ver * speed));
+			
 			if (jointCount == 0) {
 				health -= Time.deltaTime * hpDecayRate;
 				if (health <= 0) {
@@ -69,6 +67,27 @@ public class PlayerControl : MonoBehaviour {
 		}
 
 
+	}
+	void FixedUpdate(){
+		if (active) {
+			float hor = Input.GetAxis ("Horizontal");
+			float ver = Input.GetAxis ("Vertical");
+			if (hor > 0.001) {
+				hor = 1;
+			} else if (hor < -0.001) {
+				hor = -1;
+			} else {
+				hor = 0;
+			}
+			if (ver > 0.001) {
+				ver = 1;
+			} else if (ver < -0.001) {
+				ver = -1;
+			} else {
+				ver = 0;
+			}
+			rb2d.AddForce (new Vector2 (hor * speed, ver * speed));
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D coll){
