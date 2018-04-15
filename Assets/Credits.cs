@@ -27,9 +27,10 @@ public class Credits : MonoBehaviour {
 				SceneManager.LoadScene ("Logo");
 			}
 		}
-		if (Input.anyKeyDown) {
+		if (Input.anyKeyDown && !fading) {
 			blackScreen.GetComponent<GradientColorChanger> ().enabled = true;
 			time = blackScreen.GetComponent<GradientColorChanger> ().endChange;
+			fading = true;
 		}
 	}
 }
